@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-size: 1rem;
+    --font-style: 'Red Hat Display';
+    --fw-light: 500;
+    --fw-mid: 700;
+    --fw-bold: 900;
+
+    /* Colors */
+    --clr-background-lightblue: hsl(225, 100%, 94%);
+    --clr-button-brightblue: hsl(245, 75%, 52%);
+    --clr-music-icon-paleblue: hsl(225, 100%, 98%);
+    --clr-caption-mutedblue:  hsl(224, 23%, 55%);
+    --clr-heading-darkblue: hsl(223, 47%, 23%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  html, body {
+    height: 100%;
+    background-color: var(--clr-background-lightblue);
+    font-size: var(--font-size);
+    font-family: var(--font-style);
+    display: grid;
+    place-content: center;
+  }
+  .Music-Card__container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 10px 4px rgba(91, 91, 213, 0.108);
+    max-width: 365px;
+    text-align: center;
+  }
+  article * {
+    margin: 0.375rem;
+  }
+  .Music-Card__hero-section {
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 2rem ;
+    border-top-right-radius: 2rem;
+  }
+  .Music-Card__conatiner-padding {
+    padding: 0.5rem;
+  }
+  

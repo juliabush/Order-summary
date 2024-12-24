@@ -5,33 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Julia | Order summary card</title>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
+<article class="Music-Card__container">
+  <img class="Music-Card__hero-section" src="images/illustration-hero.svg" alt="Hero image of girl listening to music">
+  <div class="Music-Card__conatiner-padding">
+     <h1 class="Music-Card__title">
+      Order Summary
+   </h1>
+   <p class="Music-Card__description">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+   </p>
+   <div class="Music-Card__subscription-plan-flex-group-row">
+    <div class="Music-Card__subscription-plan-flex-group-column">
+        <span class="Music-Card__subscription-plan-bold-type" aria-label="This is the current duration of the plan you have selected.">
+          Annual Plan
+        </span> 
+        <p class="Music-Card__subscription-plan-price" aria-label="This is the price for the current plan you have selected">
+          $59.99/year
+        </p>
+    </div>
+  <p class="Music-Card__subscription-plan-underlined-text">
+    Change
+  </p>
+   </div>
+<button class="Music-Card__payment-button">
   Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+</button>
+<button class="Music-Card__cancel-order-button">
+   Cancel Order
+</button>
   </div>
+  
+</article>
 </body>
 </html>

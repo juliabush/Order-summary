@@ -144,3 +144,23 @@
   color: var(--clr-caption-mutedblue);
   font-weight: var(--fw-bold);
  }
+ @media (max-width:342px) {
+  .Music-Card__subscription-plan-bold-type {
+    font-weight: var(--fw-bold);
+    color: var(--clr-heading-darkblue);
+    margin: 0;
+    font-size: 0.9rem;
+   }
+   .Music-Card__subscription-plan-price {
+    font-weight: var(--fw-light);
+    color: var(--clr-caption-mutedblue);
+    margin: 0;
+   }
+   .Music-Card__subscription-plan-underlined-text {
+    color: var(--clr-button-brightblue);
+    font-weight: var(--fw-mid);
+    text-decoration: underline;
+    font-size: 0.8rem;
+   }
+ }
+  
